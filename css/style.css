@@ -9,10 +9,9 @@ font-family: 'Raleway', sans-serif; */
 }
 
 .wrapper{
-	max-width: 1170px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
-	box-sizing: content-box;
 }
 
 .text-color-1{
@@ -29,4 +28,69 @@ font-family: 'Raleway', sans-serif; */
 
 .text-uppercase{
 	text-transform: uppercase;
+}
+
+#features,
+#project,
+#team,
+#testimonials,
+#download{
+	scroll-margin-top: 99.07px;
+}
+
+header{
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	opacity: 0.8;
+	background-color: #252b49;
+	/* background-blend-mode: overlay; */
+	/* background-image: url(../img/bg-title.jpg); */
+}
+
+.header__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #BABBC5;
+}
+
+.navigation__list{
+	display: flex;
+}
+
+.navigation__item > a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 134px;
+	padding: 43px 0 42px;
+	font-size: 13px;
+	font-weight: 700;
+	transition: .3s;
+	position: relative;
+}
+.navigation__item > a::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	transition: .3s;
+}
+.navigation__item:hover > a::before{
+	background-color: #BABBC5;
+}
+.navigation__item:active > a::before{
+	background-color:  #E71414;
+}
+.navigation__item:active > a{
+	color: #E71414;
+}
+
+.section-title{
+	padding: 230px 0 120px;
+	background-color: rgba(37, 43, 73, 0.8);
+	background-blend-mode: overlay;
+	background-image: url(../img/bg-title.jpg);
 }

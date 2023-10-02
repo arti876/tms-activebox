@@ -13,35 +13,36 @@
 <body>
 	<header class="header">
 		<div class="wrapper__header wrapper">
-			<div class="logo">
-				<a href="#">
-					<img src="img/logo.svg" alt="logo">
-				</a>
+			<div class="header__container">
+				<div class="logo">
+					<a href="#">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+				</div>
+				<nav class="navigation">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a class="text-color-1 text-uppercase" href="#features">features</a>
+						</li>
+						<li class="navigation__item">
+							<a class="text-color-1 text-uppercase" href="#project">works</a>
+						</li>
+						<li class="navigation__item">
+							<a class="text-color-1 text-uppercase" href="#team">our team</a>
+						</li>
+						<li class="navigation__item">
+							<a class="text-color-1 text-uppercase" href="#testimonials">testimonials</a>
+						</li>
+						<li class="navigation__item">
+							<a class="text-color-1 text-uppercase" href="#>download">download</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="navigation">
-				<ul class="navigation__list">
-					<li class="navigation__item">
-						<a href="#">features</a>
-					</li>
-					<li class="navigation__item">
-						<a href="#">works</a>
-					</li>
-					<li class="navigation__item">
-						<a href="#">our team</a>
-					</li>
-					<li class="navigation__item">
-						<a href="#">testimonials</a>
-					</li>
-					<li class="navigation__item">
-						<a href="#">download</a>
-					</li>
-				</ul>
-			</nav>
 		</div>
 	</header>
 	<main>
 		<section class="section-title">
-			<div class="bg__img bg__img--section-title"><img src="img/bg-title.jpg" alt="bg__img"></div>
 			<div class="wrapper__section-title wrapper">
 				<h1>Your Favorite One Page Multi Purpose Template</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -51,11 +52,11 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-advantages">
-			<div class="wrapper__section-advantages wrapper">
-				<div class="advantages__list">
-					<div class="advantages__litem">
-						<div class="advantages__icon">
+		<section class="section-features" id="features">
+			<div class="wrapper__section-features wrapper">
+				<div class="features__list">
+					<div class="features__litem">
+						<div class="features__icon">
 							<img src="img/easily-customised.svg" alt="icon">
 						</div>
 						<h2>Easily Customised</h2>
@@ -63,8 +64,8 @@
 							Nullam quis risus eget urna mollis ornare vel eu leo.
 							Donec ullamcorper nulla non metus auctor fringilla.</p>
 					</div>
-					<div class="advantages__litem">
-						<div class="advantages__icon">
+					<div class="features__litem">
+						<div class="features__icon">
 							<img src="img/responsive-ready.svg" alt="icon">
 						</div>
 						<h2>Responsive REady</h2>
@@ -72,8 +73,8 @@
 							Nullam quis risus eget urna mollis ornare vel eu leo.
 							Donec ullamcorper nulla non metus auctor fringilla.</p>
 					</div>
-					<div class="advantages__litem">
-						<div class="advantages__icon">
+					<div class="features__litem">
+						<div class="features__icon">
 							<img src="img/modern-design.svg" alt="icon">
 						</div>
 						<h2>Modern Design</h2>
@@ -81,8 +82,8 @@
 							Nullam quis risus eget urna mollis ornare vel eu leo.
 							Donec ullamcorper nulla non metus auctor fringilla.</p>
 					</div>
-					<div class="advantages__litem">
-						<div class="advantages__icon">
+					<div class="features__litem">
+						<div class="features__icon">
 							<img src="img/clean-code.svg" alt="icon">
 						</div>
 						<h2>Clean Code</h2>
@@ -90,8 +91,8 @@
 							Nullam quis risus eget urna mollis ornare vel eu leo.
 							Donec ullamcorper nulla non metus auctor fringilla.</p>
 					</div>
-					<div class="advantages__litem">
-						<div class="advantages__icon">
+					<div class="features__litem">
+						<div class="features__icon">
 							<img src="img/ready-to-ship.svg" alt="icon">
 						</div>
 						<h2>Ready to Ship</h2>
@@ -99,8 +100,8 @@
 							Nullam quis risus eget urna mollis ornare vel eu leo.
 							Donec ullamcorper nulla non metus auctor fringilla.</p>
 					</div>
-					<div class="advantages__litem">
-						<div class="advantages__icon">
+					<div class="features__litem">
+						<div class="features__icon">
 							<img src="img/download-for-free.svg" alt="icon">
 						</div>
 						<h2>Download for Free</h2>
@@ -111,7 +112,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-project">
+		<section class="section-project" id="project">
 			<div class="wrapper__section-project wrapper">
 				<div class="project__list">
 					<div class="project__item">
@@ -157,11 +158,11 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-team">
+		<section class="section-team" id="team">
 			<div class="wrapper__team wrapper">
 				<div class="team__list">
 					<div class="team__item">
-						<img src="" alt="img">
+						<img src="img/team-1.jpg" alt="img">
 						<h3>Ruth woods</h3>
 						<p>founder, ceo</p>
 						<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
@@ -170,103 +171,100 @@
 						<div class="social-media__list">
 							<div class="social-media__item">
 								<a href="#">
-									<img src="" alt="img">
+									<img src="img/facebook-icon.svg" alt="img">
 								</a>
 							</div>
 							<div class="social-media__item">
 								<a href="#">
-									<img src="" alt="img">
+									<img src="img/twitter-icon.svg" alt="img">
 								</a>
 							</div>
 							<div class="social-media__item">
 								<a href="#">
-									<img src="" alt="img">
+									<img src="img/linkedin-icon.svg" alt="img">
 								</a>
 							</div>
 						</div>
 					</div>
 					<div class="team__item">
-						<img src="" alt="img">
-						<h3>Ruth woods</h3>
-						<p>founder, ceo</p>
+						<img src="img/team-2.jpg" alt="img">
+						<h3>Timothy Reed</h3>
+						<p>co-founder, developer</p>
 						<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
 							fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius
 							blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-						<div class="social-media__list">
-							<div class="social-media__item">
-								<a href="#">
-									<img src="" alt="img">
-								</a>
+							<div class="social-media__list">
+								<div class="social-media__item">
+									<a href="#">
+										<img src="img/facebook-icon.svg" alt="img">
+									</a>
+								</div>
+								<div class="social-media__item">
+									<a href="#">
+										<img src="img/twitter-icon.svg" alt="img">
+									</a>
+								</div>
+								<div class="social-media__item">
+									<a href="#">
+										<img src="img/linkedin-icon.svg" alt="img">
+									</a>
+								</div>
 							</div>
-							<div class="social-media__item">
-								<a href="#">
-									<img src="" alt="img">
-								</a>
-							</div>
-							<div class="social-media__item">
-								<a href="#">
-									<img src="" alt="img">
-								</a>
-							</div>
-						</div>
 					</div>
 					<div class="team__item">
-						<img src="" alt="img">
-						<h3>Ruth woods</h3>
-						<p>founder, ceo</p>
+						<img src="img/team-3.jpg" alt="img">
+						<h3>Victoria Vladez</h3>
+						<p>ui designer</p>
 						<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
 							fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius
 							blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-						<div class="social-media__list">
-							<div class="social-media__item">
-								<a href="#">
-									<img src="" alt="img">
-								</a>
+							<div class="social-media__list">
+								<div class="social-media__item">
+									<a href="#">
+										<img src="img/facebook-icon.svg" alt="img">
+									</a>
+								</div>
+								<div class="social-media__item">
+									<a href="#">
+										<img src="img/twitter-icon.svg" alt="img">
+									</a>
+								</div>
+								<div class="social-media__item">
+									<a href="#">
+										<img src="img/linkedin-icon.svg" alt="img">
+									</a>
+								</div>
 							</div>
-							<div class="social-media__item">
-								<a href="#">
-									<img src="" alt="img">
-								</a>
-							</div>
-							<div class="social-media__item">
-								<a href="#">
-									<img src="" alt="img">
-								</a>
-							</div>
-						</div>
 					</div>
 					<div class="team__item">
-						<img src="" alt="img">
-						<h3>Ruth woods</h3>
-						<p>founder, ceo</p>
+						<img src="img/team-4.jpg" alt="img">
+						<h3>Beverly Little</h3>
+						<p>data scientist</p>
 						<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
 							fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius
 							blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-						<div class="social-media__list">
-							<div class="social-media__item">
-								<a href="#">
-									<img src="" alt="img">
-								</a>
+							<div class="social-media__list">
+								<div class="social-media__item">
+									<a href="#">
+										<img src="img/facebook-icon.svg" alt="img">
+									</a>
+								</div>
+								<div class="social-media__item">
+									<a href="#">
+										<img src="img/twitter-icon.svg" alt="img">
+									</a>
+								</div>
+								<div class="social-media__item">
+									<a href="#">
+										<img src="img/linkedin-icon.svg" alt="img">
+									</a>
+								</div>
 							</div>
-							<div class="social-media__item">
-								<a href="#">
-									<img src="" alt="img">
-								</a>
-							</div>
-							<div class="social-media__item">
-								<a href="#">
-									<img src="" alt="img">
-								</a>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section-testimonials">
-			<div class="bg__img bg__img--section-testimonials">
-				<img src="" alt="img">
-			</div>
+		<section class="section-testimonials" id="testimonials">
 			<div class="wrapper__section-testimonials wradder">
 				<div class="section-testimonials__content">
 					<h6>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
@@ -292,7 +290,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-download">
+		<section class="section-download" id="download">
 			<h4>Are You Ready to Start? Download Now For Free!</h4>
 			<p>Fusce dapibus, tellus ac cursus commodo</p>
 			<div class="btn">
@@ -312,17 +310,17 @@
 					<div class="social-media__list">
 						<div class="social-media__item">
 							<a href="#">
-								<img src="" alt="img">
+								<img src="img/facebook-icon.svg" alt="img">
 							</a>
 						</div>
 						<div class="social-media__item">
 							<a href="#">
-								<img src="" alt="img">
+								<img src="img/twitter-icon.svg" alt="img">
 							</a>
 						</div>
 						<div class="social-media__item">
 							<a href="#">
-								<img src="" alt="img">
+								<img src="img/linkedin-icon.svg" alt="img">
 							</a>
 						</div>
 					</div>

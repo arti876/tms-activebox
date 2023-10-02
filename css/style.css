@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Cardo', serif;
+font-family: 'Raleway', sans-serif; */
 
 *{
 	font-family: 'Raleway', sans-serif;
@@ -10,4 +13,20 @@
 	margin: 0 auto;
 	padding: 0 15px;
 	box-sizing: content-box;
+}
+
+.text-color-1{
+	color: #fff;
+}
+
+.text-color-2{
+	color: #FF4343;
+}
+
+.text-color-3{
+	color: #808080;
+}
+
+.text-uppercase{
+	text-transform: uppercase;
 }

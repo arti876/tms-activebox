@@ -23,43 +23,9 @@ h1{
 	font-size: $h1;
 }
 
-h2,
-h3{
-	font-size: $h2;
-	color: $color-4;
-	font-weight: 900;
-}
-
-h4{
-	font-size: $h4;
-	font-weight: 500;
-}
-
-h5{
-	font-size: $h5;
-
-}
-
-h6{
-	font-size: $h6;
-	font-family: 'Cardo', serif;
-	font-style: italic;
-}
-
 h1,
-h2,
-h5{
-	text-transform: uppercase;
-}
-
-h3,
-h6{
-	text-transform: capitalize;
-}
-
-h3,
-h5{
-	font-weight: 700;
+h2{
+	font-weight: 900;
 }
 
 h1,
@@ -73,4 +39,41 @@ h1,
 h5,
 h6{
 	color: $color-1;
+}
+
+h1,
+h2,
+h5{
+	text-transform: uppercase;
+}
+
+h2,
+h3{
+	font-size: $h2;
+	color: $color-4;
+}
+
+h3,
+h6{
+	text-transform: capitalize;
+}
+
+h3,
+h5{
+	font-weight: 700;
+}
+
+h4{
+	font-size: $h4;
+	font-weight: 500;
+}
+
+h5{
+	font-size: $h5;
+}
+
+h6{
+	font-size: $h6;
+	font-family: 'Cardo', serif;
+	font-style: italic;
 }

@@ -36,7 +36,6 @@ h1, h2, h3, h4, h5, h6, p {
 img {
 	max-width: 100%;
 	height: auto;
-	vertical-align: top;
 	display: block;
 }
 
@@ -78,7 +77,7 @@ label {
 	cursor: pointer;
 }
 
-/* Отключаем кнопку для очистки текстового поля */
+// Отключаем кнопку для очистки текстового поля
 input::-ms-clear {
 	display: none;
 }

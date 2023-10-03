@@ -1,0 +1,15 @@
+// Сборщик .scss в .style.css
+
+@import "cdn";
+@import "reset-style";
+@import "variables";
+@import "temlate";
+@import "base";
+@import "section/header";
+@import "section/s-title";
+@import "section/s-features";
+@import "section/s-project";
+@import "section/s-team";
+@import "section/s-testimonials";
+@import "section/s-download";
+@import "section/footer";

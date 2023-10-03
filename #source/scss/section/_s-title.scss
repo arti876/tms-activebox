@@ -1,0 +1,18 @@
+.section-title{
+	position: relative;
+	padding: 230px 0 120px;
+	background-color: rgba(37, 43, 73, 0.8);
+	/* background-blend-mode: overlay; */
+	/* background-image: url(../img/bg-title.jpg); */
+}
+
+.bg__img{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	z-index: -1;
+}

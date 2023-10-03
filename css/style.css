@@ -2,71 +2,70 @@
 * {
   margin: 0;
   padding: 0;
-  border: none;
+  border: 0;
   text-decoration: none;
   list-style-type: none;
   color: #000;
 }
 
-*, *::before, *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
-  font-size: 100%;
   line-height: 1;
   font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
-  font-weight: 400;
+  font-weight: inherit;
 }
 
-:focus, :active, a:focus, a:active {
+:focus,
+:active,
+a:focus,
+a:active,
+input:focus,
+input:active,
+button:focus,
+button:active {
   outline: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
   display: block;
 }
 
-svg {
-  max-width: 100%;
-  height: auto;
-}
-
-input, textarea, button, select {
+input,
+textarea,
+button,
+select {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
-  background-color: transparent;
+  background-color: inherit;
 }
 
-button, input[type=submit] {
-  display: inline-block;
-  box-shadow: none;
-  background-color: transparent;
-  background: none;
+button,
+input[type=submit] {
+  background-color: inherit;
   cursor: pointer;
-}
-
-input:focus, input:active,
-button:focus, button:active {
-  outline: none;
-}
-
-input, button, textarea {
-  font-family: inherit;
 }
 
 button::-moz-focus-inner {
@@ -101,11 +100,62 @@ input::-ms-clear {
   scroll-margin-top: 99.07px;
 }
 
-.text-uppercase {
+h1 {
+  font-size: 64px;
+}
+
+h2,
+h3 {
+  font-size: 24px;
+  color: #2D3033;
+  font-weight: 900;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 36px;
+  font-family: "Cardo", serif;
+  font-style: italic;
+}
+
+h1,
+h2,
+h5 {
   text-transform: uppercase;
 }
 
-header {
+h3,
+h6 {
+  text-transform: capitalize;
+}
+
+h3,
+h5 {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h4,
+h5 {
+  text-align: center;
+}
+
+h1,
+h5,
+h6 {
+  color: #fff;
+}
+
+.header {
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -134,10 +184,11 @@ header {
   padding: 43px 0 42px;
   font-size: 13px;
   font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
   transition: 0.3s;
   position: relative;
 }
-
 .navigation__item > a::before {
   content: "";
   position: absolute;
@@ -146,17 +197,14 @@ header {
   bottom: 0;
   transition: 0.3s;
 }
-
 .navigation__item:hover > a::before {
   background-color: #BABBC5;
 }
-
-.navigation__item:active > a::before {
-  background-color: #E71414;
-}
-
 .navigation__item:active > a {
   color: #E71414;
+}
+.navigation__item:active > a::before {
+  background-color: #E71414;
 }
 
 .section-title {

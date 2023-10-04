@@ -2,7 +2,7 @@
 	position: relative;
 	padding: 230px 0 120px;
 	background-color: rgba(37, 43, 73, 0.8);
-	&__img-bg img{
+	&__img-bg {
 		@extend %img-bg;
 	}
 	&__wrapper {

@@ -103,7 +103,7 @@ input::-ms-clear {
   object-fit: contain;
 }
 
-.section-title__img-bg img {
+.section-title__img-bg {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -262,6 +262,10 @@ h6 {
 }
 .navigation__item:active > a::before {
   background-color: #e71414;
+}
+
+header.section-features {
+  background-color: #000;
 }
 
 .section-title {

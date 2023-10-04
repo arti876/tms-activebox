@@ -1,15 +1,16 @@
-.project__list{
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.project__item{
-	display: flex;
-	position: relative;
-	width: calc(100% / 4);
-	min-height: 340px;
-	border: 1px solid #fff;
-	.project-name{
+.project {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		display: flex;
+		position: relative;
+		width: calc(100% / 4);
+		min-height: 340px;
+		border: 1px solid #fff;
+	}
+	&__name {
 		position: absolute;
 		display: flex;
 		flex-direction: column;
@@ -20,18 +21,18 @@
 		z-index: 2;
 		background-color: $color-rgba-1;
 		opacity: 0;
-		transition: .3s;
-		h2{
+		transition: 0.3s;
+		h2 {
 			margin-bottom: 36px;
 		}
-		& >*{
+		& > * {
 			color: $color-1;
 		}
 	}
-	&:hover .project-name{
+	&__item:hover &__name {
 		opacity: 1;
 	}
-	img{
+	img {
 		position: absolute;
 		top: 0;
 		left: 0;

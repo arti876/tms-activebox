@@ -1,12 +1,11 @@
 .project {
 	&__list {
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 	&__item {
-		display: flex;
-		position: relative;
-		width: calc(100% / 4);
+		@extend %img-container;
+		width: 100%;
 		min-height: 340px;
 		border: 1px solid #fff;
 	}
@@ -33,12 +32,7 @@
 		opacity: 1;
 	}
 	img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
+		@extend %img-content;
 		z-index: -1;
 	}
 }

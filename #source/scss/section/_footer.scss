@@ -1,0 +1,41 @@
+.footer-content {
+	background-color: $color-11;
+	padding: 71px 0 67px;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 30px;
+	}
+	&__contacts-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		h4{
+			margin-bottom: 29px;
+		}
+		p{
+			color: $color-1;
+		}
+	}
+	&__contacts-item:nth-child(2){
+		h4{
+			margin-bottom: 48px;
+		}
+	}
+}
+
+.footer-copyright {
+	display: flex;
+	justify-content: center;
+	background-color: $color-12;
+	padding: 24px 0;
+	p {
+		max-width: 370px;
+		text-align: center;
+		color: $color-3;
+	}
+	span{
+		color: $color-1;
+	}
+}

@@ -1,0 +1,15 @@
+.section-download{
+	&__wrapper{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	padding: 132px 0 114px;
+	&__title{
+		margin-bottom: 22px;
+	}
+	&__subtitle{
+		margin-bottom: 47px;
+	}
+}

@@ -1,11 +1,11 @@
 // Основные стили
 
-*{
-	font-family: 'Raleway', sans-serif;
+* {
+	font-family: "Raleway", sans-serif;
 	font-size: 18px;
 }
 
-.wrapper{
+.wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
@@ -15,11 +15,11 @@
 #section-project,
 #section-team,
 #section-testimonials,
-#section-download{
+#section-download {
 	scroll-margin-top: 99.07px;
 }
 
-h1{
+h1 {
 	font-size: $h1;
 	color: $color-1;
 	text-align: center;
@@ -27,7 +27,7 @@ h1{
 	text-transform: uppercase;
 }
 
-h2{
+h2 {
 	font-size: $h2;
 	color: $color-4;
 	text-align: center;
@@ -35,14 +35,14 @@ h2{
 	text-transform: uppercase;
 }
 
-h3{
+h3 {
 	font-size: $h3;
 	color: $color-4;
 	font-weight: 700;
 	text-transform: capitalize;
 }
 
-h4{
+h4 {
 	font-size: $h4;
 	color: $color-1;
 	text-align: center;
@@ -50,15 +50,15 @@ h4{
 	text-transform: uppercase;
 }
 
-h5{
+h5 {
 	font-size: $h5;
 	color: $color-1;
-	font-family: 'Cardo', serif;
+	font-family: "Cardo", serif;
 	font-style: italic;
 	text-transform: capitalize;
 }
 
-h6{
+h6 {
 	font-size: $h6;
 	text-align: center;
 	font-weight: 500;

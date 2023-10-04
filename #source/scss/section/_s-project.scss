@@ -1,39 +1,35 @@
 .project__list{
 	display: flex;
 	flex-wrap: wrap;
-	.project__item{
+}
+
+.project__item{
+	display: flex;
+	position: relative;
+	width: calc(100% / 4);
+	min-height: 340px;
+	border: 1px solid #fff;
+	.project-name{
+		position: absolute;
 		display: flex;
-		position: relative;
-		width: calc(100% / 4);
-		min-height: 340px;
-		border: 1px solid #fff;
-		.project-name{
-			position: absolute;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			width: 100%;
-			height: 100%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		background-color: $color-rgba-1;
+		opacity: 0;
+		transition: .3s;
+		h2{
+			margin-bottom: 36px;
+		}
+		& >*{
 			color: $color-1;
-			z-index: 2;
-			opacity: .5;
-			h2{
-				margin-bottom: 36px;
-			}
 		}
-		// &:hover .project-name{
-		// 	opacity: 1;
-		// }
-		&:hover a::before{
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			opacity: .8;
-			background-color: $color-2;
-			z-index: 1;
-		}
+	}
+	&:hover .project-name{
+		opacity: 1;
 	}
 	img{
 		position: absolute;

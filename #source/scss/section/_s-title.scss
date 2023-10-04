@@ -2,8 +2,8 @@
 	position: relative;
 	padding: 230px 0 120px;
 	background-color: rgba(37, 43, 73, 0.8);
-	&__img-bg {
-		@extend %bg-img;
+	&__img-bg img{
+		@extend %img-bg;
 	}
 	&__wrapper {
 		display: flex;

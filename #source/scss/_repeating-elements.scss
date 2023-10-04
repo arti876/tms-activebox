@@ -32,13 +32,13 @@
 		gap: 6px;
 	}
 	&__link {
-		@extend %img-cont;
+		@extend %img-container;
 		width: 39px;
 		height: 39px;
 		border: 1px solid $color-7;
 	}
 	img {
-		@extend %img;
+		@extend %img-ico;
 		width: 50%;
 		height: 50%;
 	}

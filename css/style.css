@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -85,17 +84,26 @@ input::-ms-clear {
   position: relative;
 }
 
-.team img, .project img, .features__icon img, .header__logo img, .social-media img {
+.team img, .project img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.features__icon img, .header__logo img, .social-media img {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  object-fit: cover;
+  object-fit: contain;
 }
 
-.section-title__bg-img {
+.section-title__img-bg img {
   position: absolute;
   width: 100%;
   height: 100%;

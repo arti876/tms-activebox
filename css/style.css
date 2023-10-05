@@ -370,8 +370,9 @@ h6 {
   column-gap: 30px;
 }
 .team__item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  align-items: flex-start;
 }
 .team__photo {
   min-height: 270px;

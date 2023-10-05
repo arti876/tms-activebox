@@ -2,11 +2,13 @@
 	position: fixed;
 	z-index: 10;
 	width: 100%;
+	transition: 0.3s;
 	&__container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		border-bottom: 1px solid $color-6;
+		transition: 0.3s;
 	}
 	&__logo {
 		@extend %img-container;
@@ -57,6 +59,10 @@
 }
 
 // header-scroll
-header.section-features{
-	background-color: #000;
+.scrolled {
+	background-color: #2c3154;
+	border-bottom: 1px solid $color-6;
+}
+.scrolled-border {
+	border-bottom: none;
 }

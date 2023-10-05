@@ -52,7 +52,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-features scroll" id="section-features">
+		<section class="section-features" id="section-features">
 			<div class="section-features__wrapper wrapper">
 				<div class="features">
 					<div class="features__list">
@@ -114,7 +114,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-project scroll" id="section-project">
+		<section class="section-project" id="section-project">
 			<div class="project">
 				<div class="project__list">
 					<div class="project__item">
@@ -192,7 +192,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-team scroll" id="section-team">
+		<section class="section-team" id="section-team">
 			<div class="section-team__wrapper wrapper">
 				<div class="team">
 					<div class="team__list">
@@ -308,7 +308,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-testimonials scroll" id="section-testimonials">
+		<section class="section-testimonials" id="section-testimonials">
 			<div class="section-testimonials__wrapper wradder">
 				<div class="section-testimonials__bg-img">
 					<img src="img/bg-testimonials.jpg" alt="bg-img">
@@ -337,7 +337,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-download scroll" id="section-download">
+		<section class="section-download" id="section-download">
 			<div class="section-download__wrapper wrapper">
 				<h6 class="section-download__title">Are You Ready to Start? Download Now For Free!</h6>
 				<p class="section-download__subtitle">Fusce dapibus, tellus ac cursus commodo</p>
@@ -389,34 +389,10 @@
 			</div>
 		</section>
 	</footer>
-	<!-- <script src="js/main.js"></script> -->
-	<script type="text/javascript">
 
+	<script src="jquery/jquery-3.7.1.min.js"></script>
+	<script src="js/main.js"></script>
 
-
-		function isVisible(elem) {
-			var winTop = $(window).scrollTop(),
-				elemTop = elem.offset().top - $("header").outerHeight();
-
-			return (winTop >= elemTop);
-		}
-
-		$(window).scroll(function () {
-			$(".scroll[id]").each(function () {
-				var id = $(this).attr("id");
-
-				if (isVisible($(this))) {
-					$("header").addClass(id);
-				}
-				else {
-					$("header").removeClass(id);
-				}
-			});
-		});
-
-
-
-	</script>
 </body>
 
 </html>

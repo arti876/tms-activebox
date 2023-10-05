@@ -219,12 +219,14 @@ h6 {
   position: fixed;
   z-index: 10;
   width: 100%;
+  transition: 0.3s;
 }
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #babbc5;
+  transition: 0.3s;
 }
 .header__logo {
   width: 183.862px;
@@ -264,8 +266,13 @@ h6 {
   background-color: #e71414;
 }
 
-header.section-features {
-  background-color: #000;
+.scrolled {
+  background-color: #2c3154;
+  border-bottom: 1px solid #babbc5;
+}
+
+.scrolled-border {
+  border-bottom: none;
 }
 
 .section-title {

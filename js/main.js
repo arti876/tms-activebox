@@ -1,19 +1,10 @@
-function isVisible(elem) {
-	var winTop = $(window).scrollTop(),
-			elemTop = elem.offset().top - $("header").outerHeight();
-	
-	return (winTop >= elemTop);
-}
+// header-scroll
 
-$(window).scroll(function() {
-	$(".header-scroll[id]").each(function(){
-			var id = $(this).attr("id");
-
-			if (isVisible($(this))){
-					$("header").addClass(id);
-			}
-			else{
-					$("header").removeClass(id);
-			}
+$(function () {
+		$(document).scroll(function () {
+			var $header = $("header");
+			var $header__container = $(".header__container");
+			$header.toggleClass('scrolled', $(this).scrollTop() > $header.height());
+			$header__container.toggleClass('scrolled-border', $(this).scrollTop() > $header.height());
+		});
 	});
-});

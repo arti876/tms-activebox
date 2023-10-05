@@ -1,10 +1,19 @@
 // header-scroll
 
-$(function () {
+// $(function () {
+// 		$(document).scroll(function () {
+// 			var $header = $("header");
+// 			var $header__container = $(".header__container");
+// 			$header.toggleClass('scrolled', $(this).scrollTop() > $header.height());
+// 			$header__container.toggleClass('scrolled-border', $(this).scrollTop() > $header.height());
+// 		});
+// 	});
+
+	$(function () {
 		$(document).scroll(function () {
 			var $header = $("header");
 			var $header__container = $(".header__container");
-			$header.toggleClass('scrolled', $(this).scrollTop() > $header.height());
-			$header__container.toggleClass('scrolled-border', $(this).scrollTop() > $header.height());
+			$header.toggleClass('scrolled', $(this).scrollTop());
+			$header__container.toggleClass('scrolled-border', $(this).scrollTop());
 		});
 	});

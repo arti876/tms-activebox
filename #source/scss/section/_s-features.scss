@@ -5,9 +5,8 @@
 .features {
 	&__list {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		column-gap: 30px;
-		row-gap: 97px;
+		grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+		gap: 97px 30px;
 	}
 	&__item {
 		display: flex;
@@ -16,6 +15,7 @@
 		text-align: center;
 		h2 {
 			margin-bottom: 42px;
+			flex-grow: 1;
 		}
 	}
 	&__icon {
@@ -30,5 +30,3 @@
 		}
 	}
 }
-
-// 123

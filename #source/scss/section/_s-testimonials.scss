@@ -1,10 +1,55 @@
-
-// переделать!!!!
-
-.section-testimonials{
-	position: relative;
+.swiper-custom {
 	background-color: $color-10;
-	&__bg-img{
-		
+	&__wrapper {
 	}
+	&__link {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	&__img {
+		margin-right: 129px;
+		img {
+		}
+	}
+	&__text {
+		max-width: 471px;
+		padding-right: 15px;
+		h5 {
+			margin-bottom: 17px;
+		}
+		p {
+			color: $color-1;
+			font-size: 13px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.pagination-custom {
+	// padding-top: 31px;
+	min-height: 100px;
+	margin-top: 31px;
+	// width: 100%;
+	// height: 100px;
+	// .swiper-pagination-bullets.swiper-pagination-horizontal{
+	// 	bottom: var(--swiper-pagination-bottom,-5px);
+	// }
+	.swiper-pagination-bullet {
+		width: 18px;
+		height: 18px;
+		// background-color: $color-8;
+		// border: 1px solid $color-8;
+	}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+		margin: 0 var(--swiper-pagination-bullet-horizontal-gap,25px);
+		background-color: var(--swiper-pagination-bullet-inactive-color,#ffffff);
+		border: var(--swiper-pagination-bullet-inactive-color,1px solid #5c3249);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+	}
+}
+
+:root {
+	--swiper-theme-color: #007aff
 }

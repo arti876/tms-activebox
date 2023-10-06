@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="img/favicon.svg">
 	<title>activebox</title>
@@ -309,7 +310,82 @@
 			</div>
 		</section>
 		<section class="section-testimonials" id="section-testimonials">
-			<div class="section-testimonials__wrapper wradder">
+
+			<!-- Главный контейнер свайпера -->
+			<div class="swiper-custom swiper">
+				<!-- Обязательная оболочка -->
+				<div class="swiper-custom__wrapper swiper-wrapper">
+					<!-- Слайды -->
+					<div class="swiper-custom__slide swiper-slide">
+						<a class="swiper-custom__link" href="#">
+							<div class="swiper-custom__img">
+								<img src="img/testimonials-1.jpg" alt="img">
+							</div>
+							<div class="swiper-custom__text">
+								<h5>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+									Donec sed odio dui. Aenean eu leo quam...”</h5>
+								<p>Susan Sims, Interaction Designer at XYZ</p>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-custom__slide swiper-slide">
+						<a class="swiper-custom__link" href="#">
+							<div class="swiper-custom__img">
+								<img src="img/testimonials-2.jpg" alt="img">
+							</div>
+							<div class="swiper-custom__text">
+								<h5>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+									Donec sed odio dui. Aenean eu leo quam...”</h5>
+								<p>Ruth Woods, founder, ceo</p>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-custom__slide swiper-slide">
+						<a class="swiper-custom__link" href="#">
+							<div class="swiper-custom__img">
+								<img src="img/testimonials-3.jpg" alt="img">
+							</div>
+							<div class="swiper-custom__text">
+								<h5>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+									Donec sed odio dui. Aenean eu leo quam...”</h5>
+								<p>Timothy Reed, co-founder, developer</p>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-custom__slide swiper-slide">
+						<a class="swiper-custom__link" href="#">
+							<div class="swiper-custom__img">
+								<img src="img/testimonials-4.jpg" alt="img">
+							</div>
+							<div class="swiper-custom__text">
+								<h5>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+									Donec sed odio dui. Aenean eu leo quam...”</h5>
+								<p>Victoria Vladez, ui designer</p>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-custom__slide swiper-slide">
+						<a class="swiper-custom__link" href="#">
+							<div class="swiper-custom__img">
+								<img src="img/testimonials-5.jpg" alt="img">
+							</div>
+							<div class="swiper-custom__text">
+								<h5>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+									Donec sed odio dui. Aenean eu leo quam...”</h5>
+								<p>Beverly Little, data scientist</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- <div class="swiper-pagination"></div> -->
+			</div>
+
+			<div class="pagination-custom swiper">
+				<div class="swiper-pagination"></div>
+			</div>
+
+
+			<!-- <div class="section-testimonials__wrapper wradder">
 				<div class="section-testimonials__bg-img">
 					<img src="img/bg-testimonials.jpg" alt="bg-img">
 				</div>
@@ -335,7 +411,7 @@
 						<a href="#dots"></a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</section>
 		<section class="section-download" id="section-download">
 			<div class="section-download__wrapper wrapper">
@@ -390,11 +466,10 @@
 		</section>
 	</footer>
 
-	<script
-		src="https://code.jquery.com/jquery-3.7.1.min.js"
-		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-		crossorigin="anonymous">
-	</script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+		</script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
 
 </body>

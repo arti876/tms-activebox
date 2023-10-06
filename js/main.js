@@ -10,8 +10,6 @@ $(function () {
 });
 
 // swiper
-// const swiper = new Swiper('.swiper-custom', {
-
 
 let mySwiperCustom = new Swiper('.swiper-custom', {
 	// добавление пагинатора
@@ -40,6 +38,15 @@ let mySwiperCustom = new Swiper('.swiper-custom', {
 	},
 	// бесконечный скрол
 	loop: true,
+	// автопрокрутка
+	autoplay: {
+		// пауза между прокруткой
+		delay: 3000,
+		// отключить после ручного переключения
+		disableOnInteraction: false,
+		// закончить на последнем слайде
+		stopOnLastSlide: true,
+	}
 });
 
 let myPaginationCustom = new Swiper('.pagination-custom', {

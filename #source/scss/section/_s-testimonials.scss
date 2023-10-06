@@ -1,8 +1,6 @@
 .swiper-custom {
 	background-color: $color-10;
 	margin-bottom: 31px;
-	&__wrapper {
-	}
 	&__link {
 		display: flex;
 		justify-content: flex-start;
@@ -10,8 +8,6 @@
 	}
 	&__img {
 		margin-right: 129px;
-		img {
-		}
 	}
 	&__text {
 		max-width: 471px;

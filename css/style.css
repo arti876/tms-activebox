@@ -392,6 +392,7 @@ h6 {
 
 .swiper-custom {
   background-color: #5c3249;
+  margin-bottom: 31px;
 }
 .swiper-custom__link {
   display: flex;
@@ -416,22 +417,24 @@ h6 {
 }
 
 .pagination-custom {
-  min-height: 100px;
-  margin-top: 31px;
+  min-height: 18px;
 }
 .pagination-custom .swiper-pagination-bullet {
   width: 18px;
   height: 18px;
+  background: transparent;
+  border: 1px solid #7e5d6f;
+  opacity: 1;
+}
+.pagination-custom .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+  top: 0;
 }
 .pagination-custom .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 25px);
-  background-color: var(--swiper-pagination-bullet-inactive-color, #ffffff);
-  border: var(--swiper-pagination-bullet-inactive-color, 1px solid #5c3249);
-  opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+  margin: 0 25px;
 }
-
-:root {
-  --swiper-theme-color: #007aff ;
+.pagination-custom .swiper-pagination-bullet-active {
+  background: #7e5d6f;
 }
 
 .section-download {

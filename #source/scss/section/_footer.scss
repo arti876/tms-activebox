@@ -1,17 +1,17 @@
 .footer-content {
 	background-color: $color-11;
 	padding: 71px 0 67px;
-	@media (max-width: 1025px) {
+	@media (max-width: 1024px) {
 		padding: 46px 0 64px;
 	}
-	@media (max-width: 769px) {
+	@media (max-width: 768px) {
 		padding: 34px 0 33px;
 	}
 	&__wrapper {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 30px;
-		@media (max-width: 769px) {
+		@media (max-width: 768px) {
 			grid-template-columns: 1fr;
 			gap: 60px;
 		}
@@ -23,10 +23,10 @@
 		text-align: center;
 		h4 {
 			margin-bottom: 29px;
-			@media (max-width: 1025px) {
+			@media (max-width: 1024px) {
 				margin-bottom: 17px;
 			}
-			@media (max-width: 769px) {
+			@media (max-width: 768px) {
 				margin-bottom: 34px;
 			}
 		}
@@ -37,7 +37,7 @@
 	&__contacts-item:nth-child(2) {
 		h4 {
 			margin-bottom: 48px;
-			@media (max-width: 769px) {
+			@media (max-width: 768px) {
 				margin-bottom: 36px;
 			}
 		}
@@ -49,7 +49,7 @@
 	justify-content: center;
 	background-color: $color-12;
 	padding: 24px 0;
-	@media (max-width: 769px) {
+	@media (max-width: 768px) {
 		padding: 29px 0;
 	}
 	p {

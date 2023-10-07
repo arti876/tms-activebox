@@ -3,7 +3,7 @@
 * {
 	font-family: "Raleway", sans-serif;
 	font-size: 18px;
-	@media (max-width: 1025px) {
+	@media (max-width: 1024px) {
 		font-size: 14px;
 	}
 }
@@ -28,10 +28,10 @@ h1 {
 	text-align: center;
 	font-weight: 900;
 	text-transform: uppercase;
-	@media (max-width: 1025px) {
+	@media (max-width: 1024px) {
 		font-size: $h1-tablet;
 	}
-	@media (max-width: 769px) {
+	@media (max-width: 768px) {
 		font-size: $h1-mobile;
 	}
 }
@@ -42,10 +42,10 @@ h2 {
 	text-align: center;
 	font-weight: 900;
 	text-transform: uppercase;
-	@media (max-width: 1025px) {
+	@media (max-width: 1024px) {
 		font-size: $h2-tablet;
 	}
-	@media (max-width: 769px) {
+	@media (max-width: 768px) {
 		font-size: $h2-mobile;
 	}
 }
@@ -55,10 +55,10 @@ h3 {
 	color: $color-4;
 	font-weight: 700;
 	text-transform: capitalize;
-	@media (max-width: 1025px) {
+	@media (max-width: 1024px) {
 		font-size: $h3-tablet;
 	}
-	@media (max-width: 769px) {
+	@media (max-width: 768px) {
 		font-size: $h3-mobile;
 	}
 }
@@ -69,10 +69,10 @@ h4 {
 	text-align: center;
 	font-weight: 700;
 	text-transform: uppercase;
-	@media (max-width: 1025px) {
+	@media (max-width: 1024px) {
 		font-size: $h4-tablet;
 	}
-	@media (max-width: 769px) {
+	@media (max-width: 768px) {
 		font-size: $h4-mobile;
 	}
 }
@@ -83,10 +83,10 @@ h5 {
 	font-family: "Cardo", serif;
 	font-style: italic;
 	text-transform: capitalize;
-	@media (max-width: 1025px) {
+	@media (max-width: 1024px) {
 		font-size: $h5-tablet;
 	}
-	@media (max-width: 769px) {
+	@media (max-width: 768px) {
 		font-size: $h5-mobile;
 	}
 }
@@ -95,10 +95,10 @@ h6 {
 	font-size: $h6;
 	text-align: center;
 	font-weight: 500;
-	@media (max-width: 1025px) {
+	@media (max-width: 1024px) {
 		font-size: $h6-tablet;
 	}
-	@media (max-width: 769px) {
+	@media (max-width: 768px) {
 		font-size: $h6-mobile;
 	}
 }

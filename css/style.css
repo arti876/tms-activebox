@@ -662,7 +662,6 @@ h6 {
 }
 
 .swiper-custom {
-  background-color: #5c3249;
   margin-bottom: 31px;
 }
 @media (max-width: 768px) {
@@ -681,6 +680,7 @@ h6 {
 .swiper-custom__section-text {
   flex: 0 0 100%;
   display: flex;
+  background-color: #5c3249;
 }
 .swiper-custom__section-text h5 {
   margin-bottom: 17px;
@@ -704,7 +704,7 @@ h6 {
   }
 }
 .swiper-custom__body-text {
-  width: calc(50vw - 14.8px);
+  width: 38vw;
   padding-left: 114px;
 }
 @media (max-width: 768px) {

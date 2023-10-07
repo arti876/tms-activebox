@@ -1,5 +1,5 @@
 .swiper-custom {
-	background-color: $color-10;
+	// background-color: $color-10;
 	margin-bottom: 31px;
 	@media (max-width: 768px) {
 		margin-bottom: 23px;
@@ -13,6 +13,7 @@
 	&__section-text {
 		flex: 0 0 100%;
 		display: flex;
+		background-color: $color-10;
 		h5 {
 			margin-bottom: 17px;
 		}
@@ -34,7 +35,7 @@
 		}
 	}
 	&__body-text {
-		width: calc(50vw - (0.51 - 0.5) * (1510px - 30px));
+		width: 38vw;
 		padding-left: 114px;
 		@media (max-width: 768px) {
 			width: 100%;

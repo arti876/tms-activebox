@@ -398,9 +398,12 @@ h6 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 129px;
 }
 .swiper-custom__img {
   margin-right: 129px;
+  min-height: 100%;
+  object-fit: cover;
 }
 .swiper-custom__text {
   max-width: 471px;
@@ -417,11 +420,11 @@ h6 {
 }
 
 .pagination-custom {
-  min-height: 18px;
+  min-height: 16px;
 }
 .pagination-custom .swiper-pagination-bullet {
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   background: transparent;
   border: 1px solid #7e5d6f;
   opacity: 1;

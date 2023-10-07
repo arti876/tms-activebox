@@ -43,7 +43,7 @@ let mySwiperCustom = new Swiper('.swiper-custom', {
 		// пауза между прокруткой
 		delay: 3000,
 		// отключить после ручного переключения
-		disableOnInteraction: false,
+		disableOnInteraction: true,
 		// закончить на последнем слайде
 		stopOnLastSlide: true,
 	}

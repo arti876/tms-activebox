@@ -5,10 +5,13 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
+		gap: 129px;
 	}
 	&__img {
 		margin-right: 129px;
-	}
+		min-height: 100%;
+		object-fit: cover;
+		}
 	&__text {
 		max-width: 471px;
 		padding-right: 15px;
@@ -25,10 +28,10 @@
 }
 
 .pagination-custom {
-	min-height: 18px;
+	min-height: 16px;
 	.swiper-pagination-bullet {
-		width: 18px;
-		height: 18px;
+		width: 14px;
+		height: 14px;
 		background: transparent;
 		border: 1px solid $color-8;
 		opacity: 1;

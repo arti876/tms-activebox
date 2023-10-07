@@ -707,6 +707,22 @@ h6 {
   width: 38vw;
   padding-left: 114px;
 }
+.swiper-custom__body-text P {
+  font-size: 13px;
+}
+@media (max-width: 1240px) and (min-width: 1024px) {
+  .swiper-custom__body-text {
+    padding-left: 80px;
+  }
+  .swiper-custom__body-text h5 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .swiper-custom__body-text {
+    padding-left: 73px;
+  }
+}
 @media (max-width: 768px) {
   .swiper-custom__body-text {
     width: 100%;

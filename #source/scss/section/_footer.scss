@@ -1,26 +1,45 @@
 .footer-content {
 	background-color: $color-11;
 	padding: 71px 0 67px;
+	@media (max-width: 1025px) {
+		padding: 46px 0 64px;
+	}
+	@media (max-width: 769px) {
+		padding: 34px 0 33px;
+	}
 	&__wrapper {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: repeat(3, 1fr);
 		gap: 30px;
+		@media (max-width: 769px) {
+			grid-template-columns: 1fr;
+			gap: 60px;
+		}
 	}
 	&__contacts-item {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		h4{
+		h4 {
 			margin-bottom: 29px;
+			@media (max-width: 1025px) {
+				margin-bottom: 17px;
+			}
+			@media (max-width: 769px) {
+				margin-bottom: 34px;
+			}
 		}
-		p{
+		p {
 			color: $color-1;
 		}
 	}
-	&__contacts-item:nth-child(2){
-		h4{
+	&__contacts-item:nth-child(2) {
+		h4 {
 			margin-bottom: 48px;
+			@media (max-width: 769px) {
+				margin-bottom: 36px;
+			}
 		}
 	}
 }
@@ -30,12 +49,15 @@
 	justify-content: center;
 	background-color: $color-12;
 	padding: 24px 0;
+	@media (max-width: 769px) {
+		padding: 29px 0;
+	}
 	p {
 		max-width: 370px;
 		text-align: center;
 		color: $color-3;
 	}
-	span{
+	span {
 		color: $color-1;
 	}
 }

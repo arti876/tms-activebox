@@ -2,11 +2,13 @@
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
+		@media (max-width: 769px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 	&__item {
-		@extend %img-container;
+		position: relative;
 		width: 100%;
-		min-height: 340px;
 		border: 1px solid #fff;
 	}
 	&__name {
@@ -15,6 +17,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		text-align: center;
 		width: 100%;
 		height: 100%;
 		z-index: 2;
@@ -23,6 +26,12 @@
 		transition: 0.3s;
 		h2 {
 			margin-bottom: 36px;
+			@media (max-width: 1025px){
+				margin-bottom: 22px;
+			}
+			@media (max-width: 769px){
+				margin-bottom: 7px;
+			}
 		}
 		& > * {
 			color: $color-1;
@@ -32,7 +41,8 @@
 		opacity: 1;
 	}
 	img {
-		@extend %img-content;
+		display: block;
+		width: 100%;
 		z-index: -1;
 	}
 }

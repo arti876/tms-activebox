@@ -3,6 +3,9 @@
 	z-index: 10;
 	width: 100%;
 	transition: 0.3s;
+	@media (max-width: 769px) {
+		height: 56px;
+	}
 	&__container {
 		display: flex;
 		justify-content: space-between;
@@ -12,8 +15,13 @@
 	}
 	&__logo {
 		@extend %img-container;
-		width: 183.862px;
+		flex: 0 0 183.862px;
 		height: 25.746px;
+		@media (max-width: 769px) {
+			flex: 0 0 103.47px;
+			height: 14.35px;
+			padding-bottom: 56px;
+		}
 		img {
 			@extend %img-ico;
 		}
@@ -23,6 +31,9 @@
 .navigation {
 	&__list {
 		display: flex;
+		@media (max-width: 769px) {
+			display: none;
+		}
 	}
 	&__item {
 		> a {
@@ -37,6 +48,12 @@
 			text-transform: uppercase;
 			transition: 0.3s;
 			position: relative;
+			@media (max-width: 1025px) {
+				font-size: 12px;
+			}
+			@media (max-width: 769px) {
+				font-size: 13px;
+			}
 		}
 		> a::before {
 			content: "";

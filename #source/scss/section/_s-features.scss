@@ -1,12 +1,24 @@
 .section-features {
 	padding: 127px 0 133px;
+	@media (max-width: 1025px) {
+		padding: 78px 0 80px;
+	}
+	@media (max-width: 769px) {
+		padding: 40px 0 34px;
+	}
 }
 
 .features {
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-		gap: 97px 30px;
+		gap: 97px 20px;
+		@media (max-width: 1025px) {
+			gap: 49px 30px;
+		}
+		@media (max-width: 769px) {
+			gap: 41px 30px;
+		}
 	}
 	&__item {
 		display: flex;
@@ -16,13 +28,29 @@
 		h2 {
 			margin-bottom: 42px;
 			flex-grow: 1;
+			@media (max-width: 1025px) {
+				margin-bottom: 23px;
+			}
+			@media (max-width: 769px) {
+				margin-bottom: 8px;
+			}
 		}
 	}
 	&__icon {
 		@extend %img-container;
-		width: 100px;
-		height: 100px;
-		margin-bottom: 63px;
+		width: 85px;
+		height: 85px;
+		margin-bottom: 23px;
+		@media (max-width: 1025px) {
+			width: 75px;
+			height: 75px;
+			margin-bottom: 63px;
+		}
+		@media (max-width: 769px) {
+			width: 100px;
+			height: 100px;
+			margin-bottom: 20px;
+		}
 		img {
 			@extend %img-ico;
 			width: 85%;

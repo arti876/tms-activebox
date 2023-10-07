@@ -39,14 +39,14 @@ let mySwiperCustom = new Swiper('.swiper-custom', {
 	// бесконечный скрол
 	loop: true,
 	// автопрокрутка
-	// autoplay: {
+	autoplay: {
 		// пауза между прокруткой
-		// delay: 3000,
+		delay: 3000,
 		// отключить после ручного переключения
-		// disableOnInteraction: true,
+		disableOnInteraction: true,
 		// закончить на последнем слайде
-		// stopOnLastSlide: true,
-	// }
+		stopOnLastSlide: true,
+	}
 });
 
 let myPaginationCustom = new Swiper('.pagination-custom', {

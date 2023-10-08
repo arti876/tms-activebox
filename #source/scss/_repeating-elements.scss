@@ -18,6 +18,9 @@
 			width: 314px;
 		}
 		@media (max-width: 768px) {
+			min-height: 60px;
+		}
+		@media (max-width: 565px) {
 			width: 100%;
 			min-height: 60px;
 		}

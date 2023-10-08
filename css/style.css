@@ -137,6 +137,15 @@ input::-ms-clear {
 #section-download {
   scroll-margin-top: 99.07px;
 }
+@media (max-width: 768px) {
+  #section-features,
+  #section-project,
+  #section-team,
+  #section-testimonials,
+  #section-download {
+    scroll-margin-top: 99.07px;
+  }
+}
 
 h1 {
   font-size: 64px;

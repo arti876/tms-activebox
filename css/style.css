@@ -130,23 +130,6 @@ input::-ms-clear {
   padding: 0 15px;
 }
 
-#section-features,
-#section-project,
-#section-team,
-#section-testimonials,
-#section-download {
-  scroll-margin-top: 99.07px;
-}
-@media (max-width: 768px) {
-  #section-features,
-  #section-project,
-  #section-team,
-  #section-testimonials,
-  #section-download {
-    scroll-margin-top: 99.07px;
-  }
-}
-
 h1 {
   font-size: 64px;
   color: #fff;
@@ -324,6 +307,23 @@ h6 {
   }
 }
 
+#section-features,
+#section-project,
+#section-team,
+#section-testimonials,
+#section-download {
+  scroll-margin-top: 99.07px;
+}
+@media (max-width: 768px) {
+  #section-features,
+  #section-project,
+  #section-team,
+  #section-testimonials,
+  #section-download {
+    scroll-margin-top: 56px;
+  }
+}
+
 .navbar__wrap {
   display: flex;
   justify-content: space-between;
@@ -468,7 +468,7 @@ body.noscroll {
     position: fixed;
     left: -100%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -487,7 +487,7 @@ body.noscroll {
   }
   .popup .menu {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

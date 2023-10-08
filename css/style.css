@@ -633,21 +633,21 @@ body.noscroll {
   }
 }
 .features__icon {
-  width: 85px;
-  height: 85px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 23px;
 }
 @media (max-width: 1024px) {
   .features__icon {
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     margin-bottom: 63px;
   }
 }
 @media (max-width: 768px) {
   .features__icon {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     margin-bottom: 20px;
   }
 }

@@ -1,4 +1,6 @@
+
 // burger-menu------------------------------------------------------------------
+
 const hamb = document.querySelector("#hamb");
 const popup = document.querySelector("#popup");
 const body = document.body;
@@ -10,7 +12,7 @@ const img_bg = document.querySelector("#img_bg").cloneNode(1);
 // При клике на иконку hamb вызываем ф-ию hambHandler
 hamb.addEventListener("click", hambHandler);
 
-// Выполняем действия при клике ..
+// Выполняем действия при клике
 function hambHandler(e) {
   e.preventDefault();
   // Переключаем стили элементов при клике
@@ -40,9 +42,9 @@ function closeOnClick() {
   hamb.classList.remove("active");
   body.classList.remove("noscroll");
 }
-// burger-menu------------------------------------------------------------------
 
 // header-scroll----------------------------------------------------------------
+
 $(function () {
 	$(document).scroll(function () {
 		var $header = $("header");
@@ -51,9 +53,9 @@ $(function () {
 		$header__container.toggleClass('scrolled-border', $(this).scrollTop() > $header.height());
 	});
 });
-// header-scroll----------------------------------------------------------------
 
 // swiper-----------------------------------------------------------------------
+
 let mySwiperCustom = new Swiper('.swiper-custom', {
 	// добавление пагинатора
 	pagination: {
@@ -104,4 +106,3 @@ let myPaginationCustom = new Swiper('.pagination-custom', {
 
 mySwiperCustom.controller.control = myPaginationCustom;
 myPaginationCustom.controller.control = mySwiperCustom;
-// swiper-----------------------------------------------------------------------

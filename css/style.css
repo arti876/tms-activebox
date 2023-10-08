@@ -420,6 +420,10 @@ h6 {
   display: none;
 }
 
+body.noscroll {
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   .navbar__wrap .menu {
     display: none;

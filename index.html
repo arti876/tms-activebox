@@ -11,33 +11,31 @@
 </head>
 
 <body>
-	<header class="header">
-		<div class="header__wrapper wrapper">
-			<div class="header__container">
-				<div class="header__logo logo">
-					<a href="#">
+	<header>
+		<div class="wrapper">
+			<nav class="navbar">
+				<div class="navbar__wrap">
+					<a class="logo" href="#">
 						<img src="img/logo.svg" alt="logo">
 					</a>
-				</div>
-				<nav class="navigation">
-					<ul class="navigation__list">
-						<li class="navigation__item">
-							<a href="#section-features">features</a>
-						</li>
-						<li class="navigation__item">
-							<a href="#section-project">works</a>
-						</li>
-						<li class="navigation__item">
-							<a href="#section-team">our team</a>
-						</li>
-						<li class="navigation__item">
-							<a href="#section-testimonials">testimonials</a>
-						</li>
-						<li class="navigation__item">
-							<a href="#section-download">download</a>
-						</li>
+					<div class="hamb">
+						<div class="hamb__field" id="hamb">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</div>
+					</div>
+					<ul class="menu" id="menu">
+						<li class="menu__item"> <a href="#section-features">features</a> </li>
+						<li class="menu__item"> <a href="#section-project">works</a> </li>
+						<li class="menu__item"> <a href="#section-team">our team</a> </li>
+						<li class="menu__item"> <a href="#section-testimonials">testimonials</a> </li>
+						<li class="menu__item"> <a href="#section-download">download</a> </li>
 					</ul>
-				</nav>
+				</div>
+			</nav>
+			<div class="popup" id="popup">
+				<!-- <img class="img-bg" src="img/bg-title.jpg" alt="img-bg"> -->
 			</div>
 		</div>
 	</header>

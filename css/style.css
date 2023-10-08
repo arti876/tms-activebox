@@ -312,14 +312,14 @@ h6 {
   border-bottom: none;
 }
 
-header {
+.header {
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
   transition: 0.3s;
 }
 @media (max-width: 768px) {
-  header {
+  .header {
     height: 56px;
   }
 }
@@ -339,6 +339,7 @@ header {
 .navbar .logo {
   flex: 0 0 183.862px;
   height: 25.746px;
+  z-index: 100;
 }
 @media (max-width: 768px) {
   .navbar .logo {
@@ -418,6 +419,7 @@ header {
     padding: 19px 15px;
     cursor: pointer;
     transition: 0.3s;
+    z-index: 100;
   }
   .hamb__field .bar {
     position: relative;
@@ -448,10 +450,17 @@ header {
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #2c3154;
-    z-index: 100;
     display: flex;
+    flex-direction: column;
     transition: 0.3s;
+    top: 0;
+  }
+  .popup #img_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
   }
   .popup.open {
     left: 0;
@@ -461,16 +470,15 @@ header {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    padding: 50px 0;
+    justify-content: flex-start;
     overflow: auto;
-    padding: 0 20px;
+    padding: 56px 20px 0 20px;
+    background-color: rgba(37, 43, 73, 0.8);
   }
-  .popup .menu > li {
+  .popup .menu__item {
     width: 100%;
   }
-  .popup .menu > li > a {
+  .popup .menu__link {
     width: 100%;
     display: flex;
     justify-content: flex-start;

@@ -6,6 +6,7 @@ const body = document.body;
 
 // Клонируем меню, чтобы задать свои стили для мобильной версии
 const menu = document.querySelector("#menu").cloneNode(1);
+const img_bg = document.querySelector("#img_bg").cloneNode(1);
 
 // При клике на иконку hamb вызываем ф-ию hambHandler
 hamb.addEventListener("click", hambHandler);
@@ -23,6 +24,7 @@ function hambHandler(e) {
 // Здесь мы рендерим элементы в наш попап
 function renderPopup() {
   popup.appendChild(menu);
+	popup.appendChild(img_bg);
 }
 
 // Код для закрытия меню при нажатии на ссылку

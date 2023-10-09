@@ -1,10 +1,9 @@
 .swiper-custom {
-	// background-color: $color-10;
 	margin-bottom: 31px;
 	@media (max-width: 768px) {
 		margin-bottom: 23px;
 	}
-	&__link {
+	&__slide {
 		display: flex;
 		@media (max-width: 768px) {
 			flex-direction: column;

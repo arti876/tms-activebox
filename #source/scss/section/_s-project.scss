@@ -24,18 +24,25 @@
 		background-color: $color-rgba-1;
 		opacity: 0;
 		transition: 0.3s;
-		h2 {
-			margin-bottom: 36px;
-			@media (max-width: 1024px) {
-				margin-bottom: 22px;
-			}
-			@media (max-width: 768px) {
-				margin-bottom: 7px;
-			}
+	}
+	&__title {
+		font-size: $h2;
+		color: $color-1;
+		text-align: center;
+		font-weight: 900;
+		text-transform: uppercase;
+		margin-bottom: 36px;
+		@media (max-width: 1024px) {
+			font-size: $h2-tablet;
+			margin-bottom: 22px;
 		}
-		& > * {
-			color: $color-1;
+		@media (max-width: 768px) {
+			font-size: $h2-mobile;
+			margin-bottom: 7px;
 		}
+	}
+	&__subtitle {
+		color: $color-1;
 	}
 	&__item:hover &__name {
 		opacity: 1;

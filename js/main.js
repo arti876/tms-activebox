@@ -48,7 +48,7 @@ function closeOnClick() {
 $(function () {
 	$(document).scroll(function () {
 		var $header = $("header");
-		var $header__container = $(".header__container");
+		var $header__container = $(".navbar__wrap");
 		$header.toggleClass('scrolled', $(this).scrollTop() > $header.height());
 		$header__container.toggleClass('scrolled-border', $(this).scrollTop() > $header.height());
 	});
@@ -65,7 +65,7 @@ let mySwiperCustom = new Swiper('.swiper-custom', {
 	// скрол зажатой мышкой на пк
 	simulateTouch: true,
 	// чувствительность скрола
-	touchRatio: 3,
+	touchRatio: 1.5,
 	// изменение курсора при наведении
 	grabCursor: true,
 	// скрол клавиатурой
@@ -75,12 +75,12 @@ let mySwiperCustom = new Swiper('.swiper-custom', {
 		pageUpDown: true,
 	},
 	// управление колесом мыши
-	mousewheel: {
+	// mousewheel: {
 		// чувствительность колеса
-		sensitivity: 1,
+		// sensitivity: 1,
 		// класс объекта для скрола колесом
-		eventsTarget: ".swiper-custom"
-	},
+		// eventsTarget: ".swiper-custom"
+	// },
 	// бесконечный скрол
 	loop: true,
 	// автовысота слайдов

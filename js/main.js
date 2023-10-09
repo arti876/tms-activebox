@@ -107,3 +107,4 @@ let myPaginationCustom = new Swiper('.pagination-custom', {
 
 mySwiperCustom.controller.control = myPaginationCustom;
 myPaginationCustom.controller.control = mySwiperCustom;
+

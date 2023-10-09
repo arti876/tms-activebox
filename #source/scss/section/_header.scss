@@ -2,9 +2,33 @@
 	position: fixed;
 	z-index: 100;
 	width: 100%;
-	transition: 0.3s;
+	transition: .3s;
 	@media (max-width: 768px) {
 		height: 56px;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid $color-6;
+		transition: .3s;
+		@media (max-width: 768px) {
+			border-bottom: 0;
+		}
+		.logo {
+			@extend %img-container;
+			flex: 0 0 183.862px;
+			height: 25.746px;
+			z-index: 100;
+			@media (max-width: 768px) {
+				flex: 0 0 103.47px;
+				height: 14.35px;
+				padding-bottom: 56px;
+			}
+			img {
+				@extend %img-ico;
+			}
+		}
 	}
 }
 
@@ -16,31 +40,6 @@
 	scroll-margin-top: 99.07px;
 	@media (max-width: 768px) {
 		scroll-margin-top: 56px;
-	}
-}
-
-.navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid $color-6;
-	transition: 0.3s;
-	@media (max-width: 768px) {
-		border-bottom: 0;
-	}
-	.logo {
-		@extend %img-container;
-		flex: 0 0 183.862px;
-		height: 25.746px;
-		z-index: 100;
-		@media (max-width: 768px) {
-			flex: 0 0 103.47px;
-			height: 14.35px;
-			padding-bottom: 56px;
-		}
-		img {
-			@extend %img-ico;
-		}
 	}
 }
 
@@ -60,7 +59,6 @@
 			font-weight: 700;
 			color: $color-1;
 			text-transform: uppercase;
-			transition: 0.3s;
 			position: relative;
 			@media (max-width: 1024px) {
 				font-size: 12px;
@@ -94,15 +92,16 @@
 .scrolled {
 	background-color: #2c3154f0;
 	border-bottom: 1px solid $color-6;
-
 	@media (max-width: 768px) {
 		border-bottom: 0;
 	}
 }
 .scrolled-border {
 	border-bottom: 0;
-	// filter: blur(20px);
 }
+
+// 	filter: blur(20px);
+
 // header-scroll-----------------------------------------------------------
 
 // burger-menu-----------------------------------------------------------

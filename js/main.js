@@ -24,8 +24,9 @@ function hambHandler(e) {
 
 // Здесь мы рендерим элементы в наш попап
 function renderPopup() {
-  popup.appendChild(menu);
-	popup.appendChild(img_bg);
+  // popup.appendChild(menu);
+	// popup.appendChild(img_bg);
+	popup.append(menu, img_bg);
 }
 
 // Код для закрытия меню при нажатии на ссылку

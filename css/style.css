@@ -324,7 +324,7 @@ h6 {
   }
 }
 
-.navbar__wrap {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -332,7 +332,7 @@ h6 {
   transition: 0.3s;
 }
 @media (max-width: 768px) {
-  .navbar__wrap {
+  .navbar {
     border-bottom: 0;
   }
 }
@@ -425,7 +425,7 @@ body.noscroll {
 }
 
 @media (max-width: 768px) {
-  .navbar__wrap .menu {
+  .navbar .menu {
     display: none;
   }
   .hamb {

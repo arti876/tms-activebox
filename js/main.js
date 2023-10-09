@@ -49,12 +49,11 @@ function closeOnClick() {
 $(function () {
 	$(document).scroll(function () {
 		var $header = $("header");
-		var $header__container = $(".navbar__wrap");
+		var $header__container = $(".navbar");
 		$header.toggleClass('scrolled', $(this).scrollTop() > $header.height());
 		$header__container.toggleClass('scrolled-border', $(this).scrollTop() > $header.height());
 	});
 });
-
 // swiper-----------------------------------------------------------------------
 
 let mySwiperCustom = new Swiper('.swiper-custom', {

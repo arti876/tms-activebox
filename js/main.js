@@ -74,13 +74,6 @@ let mySwiperCustom = new Swiper('.swiper-custom', {
 		onlyInViewport: true,
 		pageUpDown: true,
 	},
-	// управление колесом мыши
-	// mousewheel: {
-		// чувствительность колеса
-		// sensitivity: 1,
-		// класс объекта для скрола колесом
-		// eventsTarget: ".swiper-custom"
-	// },
 	// бесконечный скрол
 	loop: true,
 	// автовысота слайдов
@@ -93,7 +86,14 @@ let mySwiperCustom = new Swiper('.swiper-custom', {
 		disableOnInteraction: true,
 		// закончить на последнем слайде
 		stopOnLastSlide: true,
-	}
+	},
+	// управление колесом мыши
+	// mousewheel: {
+	// чувствительность колеса
+	// sensitivity: 1,
+	// класс объекта для скрола колесом
+	// eventsTarget: ".swiper-custom"
+	// },
 });
 
 let myPaginationCustom = new Swiper('.pagination-custom', {
@@ -106,4 +106,3 @@ let myPaginationCustom = new Swiper('.pagination-custom', {
 
 mySwiperCustom.controller.control = myPaginationCustom;
 myPaginationCustom.controller.control = mySwiperCustom;
-

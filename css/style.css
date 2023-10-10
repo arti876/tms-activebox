@@ -712,6 +712,11 @@ body.noscroll {
   transform: scale(1);
   border-radius: 0;
 }
+.project__item:active .project__name {
+  transform: scale(1);
+  border-radius: 0;
+  background-color: rgba(185, 12, 12, 0.8);
+}
 .project img {
   display: block;
   width: 100%;

@@ -49,6 +49,11 @@
 		transform: scale(1);
 		border-radius: 0;
 	}
+	&__item:active &__name {
+		transform: scale(1);
+		border-radius: 0;
+		background-color: $color-rgba-2;
+	}
 	img {
 		display: block;
 		width: 100%;

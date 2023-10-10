@@ -681,8 +681,9 @@ body.noscroll {
   height: 100%;
   z-index: 2;
   background-color: rgba(255, 67, 67, 0.8);
-  opacity: 0;
-  transition: 0.3s;
+  transition: 0.5s;
+  transform: scale(0);
+  border-radius: 50%;
 }
 .project__title {
   font-size: 24px;
@@ -708,7 +709,8 @@ body.noscroll {
   color: #fff;
 }
 .project__item:hover .project__name {
-  opacity: 1;
+  transform: scale(1);
+  border-radius: 0;
 }
 .project img {
   display: block;

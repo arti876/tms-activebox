@@ -381,13 +381,14 @@ h6 {
 .menu__item > a::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 0;
   height: 3px;
   bottom: 0;
   transition: 0.3s;
 }
 .menu__item:hover > a::before {
   background-color: #babbc5;
+  width: 100%;
 }
 .menu__item:active > a {
   color: #e71414;
@@ -397,7 +398,8 @@ h6 {
 }
 
 .scrolled {
-  background-color: rgba(44, 49, 84, 0.9411764706);
+  background-color: rgba(16, 20, 44, 0.7);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid #babbc5;
 }
 @media (max-width: 768px) {

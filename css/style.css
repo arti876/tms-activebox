@@ -117,10 +117,16 @@ input::-ms-clear {
 * {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 @media (max-width: 1024px) {
   * {
     font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  * {
+    scroll-behavior: auto;
   }
 }
 

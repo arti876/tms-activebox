@@ -1,28 +1,28 @@
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	text-decoration: none;
-	list-style-type: none;
-	color: #000;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-	height: 100%;
-	width: 100%;
-	font-size: 10px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  font-size: 10px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -31,8 +31,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: inherit;
-	font-weight: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 :focus,
@@ -43,38 +43,38 @@ input:focus,
 input:active,
 button:focus,
 button:active {
-	outline: none;
+  outline: none;
 }
 
 img {
-	display: block;
+  display: block;
 }
 
 input,
 textarea,
 button,
 select {
-	font-family: inherit;
-	font-size: inherit;
-	color: inherit;
-	background-color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
 }
 
 button,
 input[type="submit"] {
-	background-color: inherit;
-	cursor: pointer;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
 }
 
 label {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 input::-ms-clear {
-	display: none;
+  display: none;
 }

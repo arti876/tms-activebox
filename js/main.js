@@ -25,8 +25,8 @@ function hambHandler(e) {
 // Здесь мы рендерим элементы в наш попап
 function renderPopup() {
   // popup.appendChild(menu);
-	// popup.appendChild(img_bg);
-	popup.append(menu, img_bg);
+  // popup.appendChild(img_bg);
+  popup.append(menu, img_bg);
 }
 
 // Код для закрытия меню при нажатии на ссылку
@@ -46,62 +46,66 @@ function closeOnClick() {
 
 // header-scroll----------------------------------------------------------------
 
-$(function () {
-	$(document).scroll(function () {
-		var $header = $("header");
-		var $header__container = $(".header__wrapper");
-		$header.toggleClass('scrolled', $(this).scrollTop() > $header.height());
-		$header__container.toggleClass('scrolled-border', $(this).scrollTop() > $header.height());
-	});
-});
+let scrollHeader = document.querySelector('header');
+let scrollHeaderWrapper = document.querySelector('.header__wrapper');
+
+window.onscroll = function () {
+  if (window.scrollY > 1) {
+    scrollHeader.classList.add('scrolled');
+    scrollHeaderWrapper.classList.add('scrolled-border');
+  } else {
+    scrollHeader.classList.remove('scrolled');
+    scrollHeaderWrapper.classList.remove('scrolled-border');
+  }
+};
 // swiper-----------------------------------------------------------------------
 
 let mySwiperCustom = new Swiper('.swiper-custom', {
-	// добавление пагинатора
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-	// скрол зажатой мышкой на пк
-	simulateTouch: true,
-	// чувствительность скрола
-	touchRatio: 1.5,
-	// изменение курсора при наведении
-	grabCursor: true,
-	// скрол клавиатурой
-	keyboard: {
-		enabled: true,
-		onlyInViewport: true,
-		pageUpDown: true,
-	},
-	// бесконечный скрол
-	loop: true,
-	// автовысота слайдов
-	autoHeight: true,
-	// автопрокрутка
-	autoplay: {
-		// пауза между прокруткой
-		delay: 3000,
-		// отключить после ручного переключения
-		disableOnInteraction: true,
-		// закончить на последнем слайде
-		stopOnLastSlide: true,
-	},
-	// управление колесом мыши
-	// mousewheel: {
-	// чувствительность колеса
-	// sensitivity: 1,
-	// класс объекта для скрола колесом
-	// eventsTarget: ".swiper-custom"
-	// },
+  // добавление пагинатора
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  // скрол зажатой мышкой на пк
+  simulateTouch: true,
+  // чувствительность скрола
+  touchRatio: 1.5,
+  // изменение курсора при наведении
+  grabCursor: true,
+  // скрол клавиатурой
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  // бесконечный скрол
+  loop: true,
+  // автовысота слайдов
+  autoHeight: true,
+  // автопрокрутка
+  autoplay: {
+    // пауза между прокруткой
+    delay: 3000,
+    // отключить после ручного переключения
+    disableOnInteraction: true,
+    // закончить на последнем слайде
+    stopOnLastSlide: true,
+  },
+  // управление колесом мыши
+  // mousewheel: {
+  // чувствительность колеса
+  // sensitivity: 1,
+  // класс объекта для скрола колесом
+  // eventsTarget: ".swiper-custom"
+  // },
 });
 
 let myPaginationCustom = new Swiper('.pagination-custom', {
-	// добавление пагинатора
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
+  // добавление пагинатора
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });
 
 mySwiperCustom.controller.control = myPaginationCustom;

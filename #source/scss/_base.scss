@@ -1,96 +1,100 @@
 // Основные стили
 
 * {
-	font-family: "Raleway", sans-serif;
-	font-size: 18px;
-	@media (max-width: 1024px) {
-		font-size: 14px;
-	}
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+  @media (max-width: 768px) {
+    scroll-behavior: auto;
+  }
 }
 
 .wrapper {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 h1 {
-	font-size: $h1;
-	color: $color-1;
-	text-align: center;
-	font-weight: 900;
-	text-transform: uppercase;
-	@media (max-width: 1024px) {
-		font-size: $h1-tablet;
-	}
-	@media (max-width: 768px) {
-		font-size: $h1-mobile;
-	}
+  font-size: $h1;
+  color: $color-1;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  @media (max-width: 1024px) {
+    font-size: $h1-tablet;
+  }
+  @media (max-width: 768px) {
+    font-size: $h1-mobile;
+  }
 }
 
 h2 {
-	font-size: $h2;
-	color: $color-4;
-	text-align: center;
-	font-weight: 900;
-	text-transform: uppercase;
-	@media (max-width: 1024px) {
-		font-size: $h2-tablet;
-	}
-	@media (max-width: 768px) {
-		font-size: $h2-mobile;
-	}
+  font-size: $h2;
+  color: $color-4;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  @media (max-width: 1024px) {
+    font-size: $h2-tablet;
+  }
+  @media (max-width: 768px) {
+    font-size: $h2-mobile;
+  }
 }
 
 h3 {
-	font-size: $h3;
-	color: $color-4;
-	font-weight: 700;
-	text-transform: capitalize;
-	@media (max-width: 1024px) {
-		font-size: $h3-tablet;
-	}
-	@media (max-width: 768px) {
-		font-size: $h3-mobile;
-	}
+  font-size: $h3;
+  color: $color-4;
+  font-weight: 700;
+  text-transform: capitalize;
+  @media (max-width: 1024px) {
+    font-size: $h3-tablet;
+  }
+  @media (max-width: 768px) {
+    font-size: $h3-mobile;
+  }
 }
 
 h4 {
-	font-size: $h4;
-	color: $color-1;
-	text-align: center;
-	font-weight: 700;
-	text-transform: uppercase;
-	@media (max-width: 1024px) {
-		font-size: $h4-tablet;
-	}
-	@media (max-width: 768px) {
-		font-size: $h4-mobile;
-	}
+  font-size: $h4;
+  color: $color-1;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  @media (max-width: 1024px) {
+    font-size: $h4-tablet;
+  }
+  @media (max-width: 768px) {
+    font-size: $h4-mobile;
+  }
 }
 
 h5 {
-	font-size: $h5;
-	color: $color-1;
-	font-family: "Cardo", serif;
-	font-style: italic;
-	text-transform: capitalize;
-	@media (max-width: 1024px) {
-		font-size: $h5-tablet;
-	}
-	@media (max-width: 768px) {
-		font-size: $h5-mobile;
-	}
+  font-size: $h5;
+  color: $color-1;
+  font-family: "Cardo", serif;
+  font-style: italic;
+  text-transform: capitalize;
+  @media (max-width: 1024px) {
+    font-size: $h5-tablet;
+  }
+  @media (max-width: 768px) {
+    font-size: $h5-mobile;
+  }
 }
 
 h6 {
-	font-size: $h6;
-	text-align: center;
-	font-weight: 500;
-	@media (max-width: 1024px) {
-		font-size: $h6-tablet;
-	}
-	@media (max-width: 768px) {
-		font-size: $h6-mobile;
-	}
+  font-size: $h6;
+  text-align: center;
+  font-weight: 500;
+  @media (max-width: 1024px) {
+    font-size: $h6-tablet;
+  }
+  @media (max-width: 768px) {
+    font-size: $h6-mobile;
+  }
 }

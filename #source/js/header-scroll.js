@@ -1,10 +1,14 @@
 // header-scroll----------------------------------------------------------------
 
-$(function () {
-	$(document).scroll(function () {
-		var $header = $("header");
-		var $header__container = $(".header__wrapper");
-		$header.toggleClass('scrolled', $(this).scrollTop() > $header.height());
-		$header__container.toggleClass('scrolled-border', $(this).scrollTop() > $header.height());
-	});
-});
+let scrollHeader = document.querySelector('header');
+let scrollHeaderWrapper = document.querySelector('.header__wrapper');
+
+window.onscroll = function () {
+  if (window.scrollY > 1) {
+    scrollHeader.classList.add('scrolled');
+    scrollHeaderWrapper.classList.add('scrolled-border');
+  } else {
+    scrollHeader.classList.remove('scrolled');
+    scrollHeaderWrapper.classList.remove('scrolled-border');
+  }
+};
